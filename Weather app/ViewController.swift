@@ -8,8 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    
+    @IBOutlet weak var userInput: UITextField!
+    
+    @IBOutlet weak var weatherResult: UILabel!
+
+    @IBAction func submit(_ sender: Any) {
+        if let city = userInput.text, !city.isEmpty {
+            let cityModified = city.components(separatedBy: " ").joined()
+            let weatherUrl = "http://www.weather-forecast.com/locations/" + cityModified + "/forecasts/latest"
+            weatherResult.text = weatherUrl
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "amanda-sandlin-10508.jpg")!)
@@ -21,6 +34,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }
 
