@@ -18,8 +18,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func submit(_ sender: Any) {
         if let city = userInput.text, !city.isEmpty {
             let cityModified = city.components(separatedBy: " ").joined()
-            let weatherUrl = "http://www.weather-forecast.com/locations/" + cityModified + "/forecasts/latest"
-            weatherResult.text = weatherUrl
+            let weatherUrlString = "http://www.weather-forecast.com/locations/" + cityModified + "/forecasts/latest"
+            
+            let weatherUrl = URL(string: weatherUrlString)
+            let weatherRequest = NSMutableURLRequest(url: weatherUrl!)
+            let weatherTask = URLSession.shared.dataTask(with: weatherRequest as URLRequest) {
+                data, reponse, error in
+                if (error != nil) {
+                    self.weatherResult.text = "An error occured. "
+                }
+                else {
+                    if let weatherData = data {
+                        let weatherDataString = NSString(data: weatherData, encoding: String.Encoding.utf8.rawValue)
+                        if (weatherDataString!.contains("404")){
+                            self.weatherResult.text = "There is no city called " + self.userInput.text!
+                        }
+                        else {
+                            self.weatherResult.text = "Everything fine"
+                        }
+                    }
+                }
+            }
+            weatherTask.resume()
         }
     }
     
