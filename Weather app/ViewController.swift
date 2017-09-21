@@ -30,11 +30,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 else {
                     if let weatherData = data {
                         let weatherDataString = NSString(data: weatherData, encoding: String.Encoding.utf8.rawValue)
-                        if (weatherDataString!.contains("404")){
-                            self.weatherResult.text = "There is no city called " + self.userInput.text!
-                        }
-                        else {
-                            self.weatherResult.text = "Everything fine"
+                        DispatchQueue.main.sync {
+                            if (weatherDataString!.contains("404")){
+                                self.weatherResult.text = "There is no city called " + self.userInput.text!
+                            }
+                            else {
+                                self.weatherResult.text = "Everything fine"
+                            }
                         }
                     }
                 }
