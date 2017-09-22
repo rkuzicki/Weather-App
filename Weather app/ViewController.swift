@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let weatherUrl = URL(string: weatherUrlString)
             let weatherRequest = NSMutableURLRequest(url: weatherUrl!)
             let weatherTask = URLSession.shared.dataTask(with: weatherRequest as URLRequest) {
-                data, reponse, error in
+                data, response, error in
                 if (error != nil) {
                     self.weatherResult.text = "An error occured. "
                 }
@@ -35,7 +35,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                 self.weatherResult.text = "There is no city called " + self.userInput.text!
                             }
                             else {
-                                self.weatherResult.text = "Everything fine"
+                                let separator = "<span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">"
+                                if let content = weatherDataString?.components(separatedBy: separator) {
+                                    let separator_2 = "</span></span></span></p>"
+                                    let message = content[1].components(separatedBy: separator_2)[0].replacingOccurrences(of: "&deg;", with: "°")
+                                    self.weatherResult.text = message
+                                }
                             }
                         }
                     }
