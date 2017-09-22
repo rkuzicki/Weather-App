@@ -35,12 +35,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                 self.weatherResult.text = "There is no city called " + self.userInput.text!
                             }
                             else {
+                                var message = ""
+                                let separator_3 = "<div data-magellan-destination=\"forecast-part-0\"></div></a><p class=\"summary\"><b>"
+                                if let titleContent = weatherDataString?.components(separatedBy: separator_3) {
+                                    let separator_4 = "</b><span class=\"read-more-small\">"
+                                    message = titleContent[1].components(separatedBy: separator_4)[0].replacingOccurrences(of: "&ndash;", with: "-") + " "
+                                }
                                 let separator = "<span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">"
                                 if let content = weatherDataString?.components(separatedBy: separator) {
                                     let separator_2 = "</span></span></span></p>"
-                                    let message = content[1].components(separatedBy: separator_2)[0].replacingOccurrences(of: "&deg;", with: "°")
-                                    self.weatherResult.text = message
+                                    message = message + content[1].components(separatedBy: separator_2)[0].replacingOccurrences(of: "&deg;", with: "°")
                                 }
+                                self.weatherResult.text = message
                             }
                         }
                     }
@@ -52,7 +58,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "amanda-sandlin-10508.jpg")!)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

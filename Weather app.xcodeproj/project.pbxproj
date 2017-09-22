@@ -12,7 +12,7 @@
 		BF2D77FF1F71B12D007FDDC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2D77FD1F71B12D007FDDC0 /* Main.storyboard */; };
 		BF2D78011F71B12D007FDDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2D78001F71B12D007FDDC0 /* Assets.xcassets */; };
 		BF2D78041F71B12D007FDDC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2D78021F71B12D007FDDC0 /* LaunchScreen.storyboard */; };
-		BF2D780C1F71B4B9007FDDC0 /* amanda-sandlin-10508.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF2D780B1F71B4B9007FDDC0 /* amanda-sandlin-10508.jpg */; };
+		BFEECD991F755DF200B7E6FD /* mike-dennler-173199.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFEECD981F755DF200B7E6FD /* mike-dennler-173199.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		BF2D78001F71B12D007FDDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2D78031F71B12D007FDDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2D78051F71B12D007FDDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF2D780B1F71B4B9007FDDC0 /* amanda-sandlin-10508.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "amanda-sandlin-10508.jpg"; path = "../../../../Downloads/amanda-sandlin-10508.jpg"; sourceTree = "<group>"; };
+		BFEECD981F755DF200B7E6FD /* mike-dennler-173199.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mike-dennler-173199.jpg"; path = "../../../../Downloads/mike-dennler-173199.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		BF2D77F81F71B12D007FDDC0 /* Weather app */ = {
 			isa = PBXGroup;
 			children = (
-				BF2D780B1F71B4B9007FDDC0 /* amanda-sandlin-10508.jpg */,
+				BFEECD981F755DF200B7E6FD /* mike-dennler-173199.jpg */,
 				BF2D77F91F71B12D007FDDC0 /* AppDelegate.swift */,
 				BF2D77FB1F71B12D007FDDC0 /* ViewController.swift */,
 				BF2D77FD1F71B12D007FDDC0 /* Main.storyboard */,
@@ -127,8 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2D78041F71B12D007FDDC0 /* LaunchScreen.storyboard in Resources */,
+				BFEECD991F755DF200B7E6FD /* mike-dennler-173199.jpg in Resources */,
 				BF2D78011F71B12D007FDDC0 /* Assets.xcassets in Resources */,
-				BF2D780C1F71B4B9007FDDC0 /* amanda-sandlin-10508.jpg in Resources */,
 				BF2D77FF1F71B12D007FDDC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +303,7 @@
 				BF2D780A1F71B12D007FDDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

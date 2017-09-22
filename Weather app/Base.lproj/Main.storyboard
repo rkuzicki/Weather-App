@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amanda-sandlin-10508.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Kw-o8-XZt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mike-dennler-173199.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Kw-o8-XZt">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the weather?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="qKd-hg-oqo">
@@ -53,7 +53,7 @@
                                     <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EG8-6O-45Q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-Hw-aO5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-Hw-aO5">
                                 <rect key="frame" x="16" y="210" width="288" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
@@ -66,18 +66,26 @@
                             <constraint firstItem="5cM-oB-gap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="26W-n8-TYj"/>
                             <constraint firstItem="Ate-Hw-aO5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3FG-4l-cWv"/>
                             <constraint firstItem="qKd-hg-oqo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44H-uX-JDa"/>
+                            <constraint firstItem="1Kw-o8-XZt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="49h-YS-oqc"/>
+                            <constraint firstItem="1Kw-o8-XZt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8yD-pN-JEo"/>
                             <constraint firstItem="4sc-3Y-3Ui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9c8-zR-WkT"/>
+                            <constraint firstAttribute="trailing" secondItem="1Kw-o8-XZt" secondAttribute="trailing" id="9d6-7z-0BU"/>
                             <constraint firstItem="qKd-hg-oqo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="D2f-iM-zu7"/>
                             <constraint firstItem="Ate-Hw-aO5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IWt-0c-SUG"/>
                             <constraint firstAttribute="trailing" secondItem="1Kw-o8-XZt" secondAttribute="trailing" id="LKa-Ky-GQ0"/>
                             <constraint firstItem="HkB-bo-LJp" firstAttribute="top" secondItem="5cM-oB-gap" secondAttribute="bottom" constant="25" id="M2x-5r-Lmo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Kw-o8-XZt" secondAttribute="bottom" id="M38-Ya-rR2"/>
                             <constraint firstItem="HkB-bo-LJp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NRb-f7-a7x"/>
+                            <constraint firstAttribute="trailing" secondItem="1Kw-o8-XZt" secondAttribute="trailing" id="NxC-s0-deJ"/>
                             <constraint firstItem="1Kw-o8-XZt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rfy-wc-xJA"/>
+                            <constraint firstItem="1Kw-o8-XZt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YT0-QH-dlH"/>
                             <constraint firstItem="1Kw-o8-XZt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZiQ-nW-zwn"/>
+                            <constraint firstItem="1Kw-o8-XZt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bPR-pE-NZy"/>
                             <constraint firstItem="HkB-bo-LJp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q9a-f6-aEd"/>
                             <constraint firstItem="4sc-3Y-3Ui" firstAttribute="top" secondItem="HkB-bo-LJp" secondAttribute="bottom" constant="8" id="tMZ-dp-PVL"/>
                             <constraint firstItem="Ate-Hw-aO5" firstAttribute="top" secondItem="4sc-3Y-3Ui" secondAttribute="bottom" constant="8" id="yIC-d8-B6M"/>
+                            <constraint firstAttribute="bottom" secondItem="1Kw-o8-XZt" secondAttribute="bottom" id="ybf-AI-AMB"/>
+                            <constraint firstAttribute="bottom" secondItem="1Kw-o8-XZt" secondAttribute="bottom" id="yfL-a3-Utk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -87,10 +95,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-948.75" y="-197.53521126760563"/>
+            <point key="canvasLocation" x="-1219" y="-566"/>
         </scene>
     </scenes>
     <resources>
-        <image name="amanda-sandlin-10508.jpg" width="1224" height="816"/>
+        <image name="mike-dennler-173199.jpg" width="960" height="640"/>
     </resources>
 </document>
